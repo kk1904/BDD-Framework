@@ -13,8 +13,6 @@ public class Hooks {
         drivermanager.getUrl();
         drivermanager.maxWindow();
         drivermanager.applyWait();
-        drivermanager.getRandomString(8);
-
     }
     @After
     public void tearDown(Scenario scenario){

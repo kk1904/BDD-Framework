@@ -15,36 +15,40 @@ public class RegistrationPage extends DriverManager {
     @FindBy(id = "FirstName")
     public WebElement enterFirstName;
 
-    public void enterName() {
-        enterFirstName.sendKeys("Krishna");
+    public void enterName(String firstName) {
+        enterFirstName.sendKeys(firstName);
     }
 
     @FindBy(id = "LastName")
     public WebElement enterLastName;
 
-    public void enterLName() {
-        enterLastName.sendKeys("vasani");
+    public void enterLName(String lastName) {
+        enterLastName.sendKeys(lastName);
+
     }
 
     @FindBy(id = "Email")
     public WebElement enterEmail;
 
-    public void enterMail() {
-        enterEmail.sendKeys("vk19@gmail.com");
+    public void enterMail(String email) {
+        String randomString = getRandomString(5);
+        String myEmail = randomString+email;
+        System.out.println(myEmail);
+        enterEmail.sendKeys(email);
     }
 
     @FindBy(id = "Password")
     public WebElement enterPassword;
 
-    public void enterPass() {
-        enterPassword.sendKeys("123456");
+    public void enterPass(String password) {
+        enterPassword.sendKeys(password);
     }
 
     @FindBy(id = "ConfirmPassword")
-    public WebElement enterCPassword;
+    public WebElement enterConfirmPassword;
 
-    public void enterCPass() {
-        enterCPassword.sendKeys("123456");
+    public void enterCPass(String confirmPassword) {
+        enterConfirmPassword.sendKeys(confirmPassword);
     }
 
     @FindBy(id = "register-button")
@@ -60,5 +64,20 @@ public class RegistrationPage extends DriverManager {
     public String getRegisterText() {
         String actualtext = welcomeRegistration.getText();           //your registration completed
         return actualtext;
+    }
+    public void enterRegistrationDetails(String firstName, String lastName, String email, String password, String confirmPassword ){
+        enterFirstName.clear();
+        enterFirstName.sendKeys(firstName);
+        enterLastName.clear();
+        enterLastName.sendKeys(lastName);
+        enterEmail.clear();
+        String randomString= getRandomString(5);
+        String myEmail = randomString+email;
+        System.out.println(email);
+        enterEmail.sendKeys(email);
+        enterPassword.clear();
+        enterPassword.sendKeys(password);
+        enterConfirmPassword.clear();
+        enterConfirmPassword.sendKeys(confirmPassword);
     }
 }
