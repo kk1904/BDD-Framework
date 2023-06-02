@@ -1,10 +1,13 @@
 package org.example.step_def;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.example.driver.DriverManager;
 import org.example.pages.LoginPage;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class LoginSteps extends DriverManager {
     LoginPage loginpage = new LoginPage();
@@ -19,5 +22,20 @@ public class LoginSteps extends DriverManager {
 
     }
 
+    @And("^I enter emailID \"([^\"]*)\" and password \"([^\"]*)\"$")
+    public void iEnterEmailIDAndPassword(String arg0, String arg1) throws Throwable {
+        loginpage.enterMail();
+        loginpage.enterPass();
+    }
 
+    @And("^I click on login button$")
+    public void iClickOnLoginButton() {
+        loginpage.clickLoginBtn();
+    }
+
+    @Then("^I should see Log out on header\\.$")
+    public void iShouldSeeLogOutOnHeader() {
+            boolean ans= loginpage.displayLogoutBtn();
+            assertTrue(ans);
+    }
 }
