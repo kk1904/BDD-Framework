@@ -12,7 +12,6 @@ public class LoginPage extends DriverManager {
         String actualtext= welcomeText.getText();           //Welcome, Please Sign In!
         return actualtext;
     }
-
     @FindBy(id = "Email")
     public WebElement enterEmail;
 

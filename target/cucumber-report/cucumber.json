@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 27567915200,
+              "duration": 7430045000,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 61,
-        "name": "Registration with data table with outline",
+        "line": 14,
+        "name": "View product on shopping cart",
         "description": "",
-        "id": "registration-feature;registration-with-data-table-with-outline;;2",
+        "id": "add-to-basket-feature;view-product-on-shopping-cart",
         "after": [
           {
             "result": {
-              "duration": 786394400,
+              "duration": 988663800,
               "status": "passed"
             },
             "match": {
@@ -30,436 +30,81 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 607749900,
+              "duration": 357948100,
               "status": "passed"
             },
-            "line": 51,
-            "name": "I an on homepage",
+            "line": 15,
+            "name": "I am on homepage",
             "match": {
-              "location": "HomeSteps.i_an_on_homepage()"
+              "location": "ShoppingCartSteps.iAmOnHomepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1386204000,
+              "duration": 1327641000,
               "status": "passed"
             },
-            "line": 52,
-            "name": "I click on registration btn on home page",
+            "line": 16,
+            "name": "I click on jewelry",
             "match": {
-              "location": "HomeSteps.iClickOnRegistrationBtnOnHomePage()"
+              "location": "HomeSteps.i_click_on_jewelry()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1616086400,
+              "duration": 737181700,
               "status": "passed"
             },
-            "line": 53,
-            "name": "I enter following details for registration",
+            "line": 17,
+            "name": "I click on Flower Girl Bracelet",
             "match": {
-              "location": "RegistrationSteps.iEnterFollowingDetailsForRegistration(DataTable)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3,
-              4
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "firstName",
-                  "lastName",
-                  "email",
-                  "password",
-                  "confirmPassword"
-                ],
-                "line": 54
-              },
-              {
-                "cells": [
-                  "Reema",
-                  "Dave",
-                  "ks@gmail.com",
-                  "123456",
-                  "123456"
-                ],
-                "line": 55
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1129599300,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I click on Register btn",
-            "match": {
-              "location": "RegistrationSteps.iClickOnRegisterBtn()"
+              "location": "ShoppingCartSteps.i_click_on_Flower_Girl_Bracelet()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 49182400,
+              "duration": 181544200,
               "status": "passed"
             },
-            "line": 57,
-            "name": "I should see on registration page \"Your registration completed\" text",
+            "line": 18,
+            "name": "I click on add to cart btn",
             "match": {
-              "arguments": [
-                {
-                  "val": "Your registration completed",
-                  "offset": 35
-                }
-              ],
-              "location": "RegistrationSteps.i_should_see_on_registration_page_text(String)"
+              "location": "ShoppingCartSteps.i_click_on_add_to_cart_btn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1116270500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see the product in cart when I click on shopping cart",
+            "match": {
+              "location": "ShoppingCartSteps.i_should_see_the_product_in_cart_when_I_click_on_shopping_cart()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1295200,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "the url should contain \"/registerresult/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "/registerresult/",
-                  "offset": 24
-                }
-              ],
-              "location": "LoginSteps.the_url_should_contain(String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 49,
-            "name": "@RegTest3"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5566553700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 62,
-        "name": "Registration with data table with outline",
-        "description": "",
-        "id": "registration-feature;registration-with-data-table-with-outline;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 831249700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1168700,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I an on homepage",
-            "match": {
-              "location": "HomeSteps.i_an_on_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1156955900,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I click on registration btn on home page",
-            "match": {
-              "location": "HomeSteps.iClickOnRegistrationBtnOnHomePage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1076762000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I enter following details for registration",
-            "match": {
-              "location": "RegistrationSteps.iEnterFollowingDetailsForRegistration(DataTable)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3,
-              4
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "firstName",
-                  "lastName",
-                  "email",
-                  "password",
-                  "confirmPassword"
-                ],
-                "line": 54
-              },
-              {
-                "cells": [
-                  "Hima",
-                  "Kanabar",
-                  "hk@gmail.com",
-                  "123456",
-                  "123456"
-                ],
-                "line": 55
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 951717500,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I click on Register btn",
-            "match": {
-              "location": "RegistrationSteps.iClickOnRegisterBtn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57985700,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I should see on registration page \"Your registration completed\" text",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your registration completed",
-                  "offset": 35
-                }
-              ],
-              "location": "RegistrationSteps.i_should_see_on_registration_page_text(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 553100,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "the url should contain \"/registerresult/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "/registerresult/",
-                  "offset": 24
-                }
-              ],
-              "location": "LoginSteps.the_url_should_contain(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 49,
-            "name": "@RegTest3"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5320357000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 63,
-        "name": "Registration with data table with outline",
-        "description": "",
-        "id": "registration-feature;registration-with-data-table-with-outline;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 816113400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 319600,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I an on homepage",
-            "match": {
-              "location": "HomeSteps.i_an_on_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1142681900,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I click on registration btn on home page",
-            "match": {
-              "location": "HomeSteps.iClickOnRegistrationBtnOnHomePage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1094174600,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I enter following details for registration",
-            "match": {
-              "location": "RegistrationSteps.iEnterFollowingDetailsForRegistration(DataTable)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3,
-              4
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "firstName",
-                  "lastName",
-                  "email",
-                  "password",
-                  "confirmPassword"
-                ],
-                "line": 54
-              },
-              {
-                "cells": [
-                  "Chandni",
-                  "Pathak",
-                  "cp@gmail.com",
-                  "123456",
-                  "123456"
-                ],
-                "line": 55
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 827249400,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I click on Register btn",
-            "match": {
-              "location": "RegistrationSteps.iClickOnRegisterBtn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 58286200,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I should see on registration page \"Your registration completed\" text",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your registration completed",
-                  "offset": 35
-                }
-              ],
-              "location": "RegistrationSteps.i_should_see_on_registration_page_text(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 330900,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "the url should contain \"/registerresult/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "/registerresult/",
-                  "offset": 24
-                }
-              ],
-              "location": "LoginSteps.the_url_should_contain(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 49,
-            "name": "@RegTest3"
+            "line": 13,
+            "name": "@Basket2"
           }
         ]
       }
     ],
-    "name": "registration feature",
-    "description": "As a user\r\nI want to add registration functionality\r\nSo that customer can use it",
-    "id": "registration-feature",
+    "name": "add to basket feature",
+    "description": "As a user\r\nI want to add product to basket\r\nSo that I can buy the product",
+    "id": "add-to-basket-feature",
     "keyword": "Feature",
-    "uri": "registration.feature"
+    "uri": "basket.feature"
   }
 ]

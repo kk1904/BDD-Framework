@@ -10,12 +10,23 @@ public class HomePage extends DriverManager {
     public void clickOnLoginBtn(){
         loginBtn.click();
     }
-
     @FindBy(css=".ico-register")
     public WebElement registerBtn;
 
     public void clickOnRegisterButton(){
         registerBtn.click();
+    }
+    @FindBy(xpath = "//*[@class=\"header-menu\"]/ul[1]/li[5]")
+    public WebElement booksMenuBtn;
+
+    public void clickOnBooksMenuBtn(){
+        booksMenuBtn.click();
+    }
+    @FindBy(xpath = "//*[@class=\"header-menu\"]/ul[1]/li[6]")
+    public WebElement jewelryMenuBtn;
+
+    public void clickOnJewelryBtn(){
+        jewelryMenuBtn.click();
     }
 
 }

@@ -21,4 +21,15 @@ public class HomeSteps extends DriverManager {
     public void iClickOnRegistrationBtnOnHomePage() {
        homepage.clickOnRegisterButton();
     }
+    @When("^I click on books$")
+    public void i_click_on_books() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        homepage.clickOnBooksMenuBtn();
+    }
+
+    @When("^I click on jewelry$")
+    public void i_click_on_jewelry() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        homepage.clickOnJewelryBtn();
+    }
 }
