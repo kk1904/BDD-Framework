@@ -32,4 +32,16 @@ public class HomeSteps extends DriverManager {
         // Write code here that turns the phrase above into concrete actions
         homepage.clickOnJewelryBtn();
     }
+
+    @When("^I hover the mouse on computer$")
+    public void i_hover_the_mouse_on_computer() throws InterruptedException {
+        // Write code here that turns the phrase above into concrete actions
+        homepage.mouseHoverOnComputerMenu();
+    }
+
+    @When("^I click on notebook$")
+    public void i_click_on_notebook() throws InterruptedException {
+        // Write code here that turns the phrase above into concrete actions
+        homepage.clickOnNotebook();
+    }
 }

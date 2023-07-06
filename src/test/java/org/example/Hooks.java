@@ -26,6 +26,5 @@ public class Hooks {
         }
         drivermanager.closeWindow();
         log.info("Driver and Browser is closed");
-
     }
 }

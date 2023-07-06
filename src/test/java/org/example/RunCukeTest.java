@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         strict = true,
         monochrome = true,
-        tags = "@Basket2",
+        tags = "@RegTest1",
         plugin = "json:target/cucumber-report/cucumber.json")
 public class RunCukeTest {
 
