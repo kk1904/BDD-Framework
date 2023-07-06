@@ -6,8 +6,8 @@ import cucumber.api.java.en.Then;
 import org.example.driver.DriverManager;
 import org.example.pages.LoginPage;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.*;
 
 public class LoginSteps extends DriverManager {
     LoginPage loginpage = new LoginPage();
@@ -17,9 +17,9 @@ public class LoginSteps extends DriverManager {
         assertEquals(expectedText,actualText);
     }
     @Then("^the url should contain \"([^\"]*)\"$")
-    public void the_url_should_contain(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-
+    public void the_url_should_contain(String expectedText) throws Throwable {
+        String myUrl=getUrl();
+        assertThat(myUrl,containsString(expectedText));
     }
 
     @And("^I enter emailID \"([^\"]*)\" and password \"([^\"]*)\"$")

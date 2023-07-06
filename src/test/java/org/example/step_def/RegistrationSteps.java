@@ -3,6 +3,7 @@ package org.example.step_def;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.example.driver.DriverManager;
 import org.example.pages.RegistrationPage;
@@ -100,4 +101,6 @@ public class RegistrationSteps extends DriverManager {
                 data.get(0).get("confirmPassword")
         );
     }
+
+
 }

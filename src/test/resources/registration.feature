@@ -41,7 +41,7 @@ Feature: registration feature
     When I click on registration btn on home page
     And I enter following details for registration
       | firstName | lastName | email        | password | confirmPassword |
-      | Krishna   | Vasani   | vk@gmail.com | 123456   | 123456          |
+      | Kaushal   | Samani   | ks@gmail.com | 123456   | 123456          |
     And I click on Register btn
     Then I should see on registration page "Your registration completed" text
     And the url should contain "/registerresult/"
@@ -61,6 +61,7 @@ Feature: registration feature
         | Reema      | Dave      | ks@gmail.com | 123456    | 123456           |
         | Hima       | Kanabar   | hk@gmail.com | 123456    | 123456           |
         | Chandni    | Pathak    | cp@gmail.com | 123456    | 123456           |
+
 
 
 

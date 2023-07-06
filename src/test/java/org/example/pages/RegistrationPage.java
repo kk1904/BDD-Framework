@@ -26,7 +26,6 @@ public class RegistrationPage extends DriverManager {
         enterLastName.sendKeys(lastName);
 
     }
-
     @FindBy(id = "Email")
     public WebElement enterEmail;
 

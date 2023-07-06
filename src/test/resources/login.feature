@@ -4,13 +4,14 @@ Feature: login feature
   I want to add login functionality
   So that customer can use it
 
+  @Login1
   Scenario:Validating sign in text on login page
     Given I an on homepage
     When I click on login btn on home page
     Then I should see "Welcome, Please Sign In!" text
     And the url should contain "/login"
 
-  @Login1
+  @Login2
   Scenario:Successful Login with valid credentials
     Given I an on homepage
     When I click on login btn on home page
