@@ -1,0 +1,24 @@
+INFO    2023-07-06 22:50:38,353 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:50:53,103 [main] org.example.driver.DriverManager  - Browser is opened
+INFO    2023-07-06 22:50:57,305 [main] org.example.driver.DriverManager  - Scenario is started
+INFO    2023-07-06 22:50:58,164 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:50:58,211 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:50:59,563 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:50:59,566 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:02,490 [main] org.example.driver.DriverManager  - Driver and Browser is closed
+INFO    2023-07-06 22:51:02,490 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:04,987 [main] org.example.driver.DriverManager  - Browser is opened
+INFO    2023-07-06 22:51:08,619 [main] org.example.driver.DriverManager  - Scenario is started
+INFO    2023-07-06 22:51:08,620 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:08,622 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:09,910 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:09,911 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:12,357 [main] org.example.driver.DriverManager  - Driver and Browser is closed
+INFO    2023-07-06 22:51:12,358 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:15,158 [main] org.example.driver.DriverManager  - Browser is opened
+INFO    2023-07-06 22:51:22,789 [main] org.example.driver.DriverManager  - Scenario is started
+INFO    2023-07-06 22:51:22,803 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:22,808 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:24,107 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:24,108 [main] org.example.driver.DriverManager  - Driver is started
+INFO    2023-07-06 22:51:26,460 [main] org.example.driver.DriverManager  - Driver and Browser is closed
