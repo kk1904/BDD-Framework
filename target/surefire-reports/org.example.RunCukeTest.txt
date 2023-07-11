@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.example.RunCukeTest
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 0, Errors: 6, Skipped: 12, Time elapsed: 70.205 s <<< FAILURE! - in org.example.RunCukeTest
+And I enter the 123456(| Krishna | Vasani | vk@gmail.com | 123456 | 123456 |)  Time elapsed: 0.008 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| Krishna | Vasani | vk@gmail.com | 123456 | 123456 |  Time elapsed: 0.008 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+And I enter the 123456(| Urvi | Vasani | uv@gmail.com | 123456 | 123456 |)  Time elapsed: 0 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| Urvi | Vasani | uv@gmail.com | 123456 | 123456 |  Time elapsed: 0.001 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+And I enter the 123456(| Milan | Vasani | mv@gmail.com | 123456 | 123456 |)  Time elapsed: 0 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| Milan | Vasani | mv@gmail.com | 123456 | 123456 |  Time elapsed: 0.001 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+

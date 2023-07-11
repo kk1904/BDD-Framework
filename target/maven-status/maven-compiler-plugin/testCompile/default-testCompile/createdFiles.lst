@@ -1,0 +1,13 @@
+org\example\RunCukeTest.class
+org\example\Hooks.class
+org\example\pages\BasketPage.class
+org\example\pages\HomePage.class
+org\example\step_def\HomeSteps.class
+org\example\driver\DriverManager.class
+org\example\step_def\ShoppingCartSteps.class
+org\example\step_def\SortByAndDisplaySteps.class
+org\example\step_def\RegistrationSteps.class
+org\example\pages\RegistrationPage.class
+org\example\pages\LoginPage.class
+org\example\step_def\LoginSteps.class
+org\example\pages\SortByAndDisplayPage.class

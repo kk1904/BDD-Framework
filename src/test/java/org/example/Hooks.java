@@ -11,8 +11,8 @@ public class Hooks {
     public static Logger log = Logger.getLogger(DriverManager.class);
     @Before
     public void setUp() throws InterruptedException, IllegalAccessException {
-        drivermanager.openLocalBrowser();
-        //drivermanager.openHeadlessBrowser();
+        //drivermanager.openLocalBrowser();
+        drivermanager.openHeadlessBrowser();
        log.info("Browser is opened");
         drivermanager.openUrl();
         drivermanager.maxWindow();
